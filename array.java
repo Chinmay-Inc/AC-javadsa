@@ -17,6 +17,10 @@ public class array {
         System.out.println("maths : "+marks[1]);
         System.out.println("java : "+marks[2]);
         System.out.println("dsa : "+marks[3]);
+        marks[1]=marks[1]+5;
+        // System.out.println("Updated maths marks : "+marks[1]);
         System.out.println("length : "+marks.length);
+        int percentage=(marks[0]+marks[1]+marks[2]+marks[3])/4;
+        System.out.println("Percentage of the marks : "+percentage +" %");
     }
 }
