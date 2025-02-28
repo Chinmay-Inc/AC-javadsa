@@ -10,6 +10,8 @@ public class transpose2dArray {
             System.out.println();
         }
     }
+
+
     public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
 
@@ -35,5 +37,25 @@ public class transpose2dArray {
         }
         System.out.println("Transposed : ");
         Printarr(transpose,cols,rows);
+
+        System.out.println("Reversed : ");
+
+        for(int i=0;i<rows;i++){
+            int left=0;
+            int right=cols-1;
+            while (left < right) {
+                int temp=transpose[i][left];
+                transpose[i][left]=transpose[i][right];
+                transpose[i][right]=temp;
+                left++;
+                right--;
+            }
+        }
+
+
+        Printarr(transpose,rows,cols);
+
+
+
     }
 }
